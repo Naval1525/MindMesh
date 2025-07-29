@@ -19,6 +19,7 @@ import FloatingToolbar from './FloatingToolbar';
 import SearchPanel from './SearchPanel';
 import NodeTypePanel from './NodeTypePanel';
 import KeyboardShortcuts from './KeyboardShortcuts';
+import FeedbackModal from './FeedbackModal';
 import { nodeTypes } from './nodes';
 import '@reactflow/core/dist/style.css';
 import '@reactflow/controls/dist/style.css';
@@ -33,6 +34,29 @@ const MindMeshCanvas: React.FC = () => {
   const [isNodePanelOpen, setIsNodePanelOpen] = useState(false);
   const [snapToGrid, setSnapToGrid] = useState(false);
   const [selectedNodeIds, setSelectedNodeIds] = useState<string[]>([]);
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
+  const [showAutoFeedback, setShowAutoFeedback] = useState(false);
+
+  // Check if user has already given feedback in this session
+  const hasGivenFeedback = localStorage.getItem('mindmesh_feedback_given') === 'true';
+
+  // Auto-feedback timer
+  useEffect(() => {
+    if (hasGivenFeedback) return; // Don't show if already given feedback
+
+    const timer = setTimeout(() => {
+      setShowAutoFeedback(true);
+    }, 30000); // 30 seconds
+
+    return () => clearTimeout(timer);
+  }, [hasGivenFeedback]);
+
+  const handleFeedbackSubmit = useCallback(() => {
+    // Mark that user has given feedback
+    localStorage.setItem('mindmesh_feedback_given', 'true');
+    setShowAutoFeedback(false);
+    setShowFeedbackModal(false);
+  }, []);
 
   const groupSelectedNodes = useCallback(() => {
     if (!reactFlowInstance) return;
@@ -168,6 +192,7 @@ Write in plain text only. No formatting, no symbols, no bullet points. Use natur
           color: 'yellow',
         },
       } as unknown as Node;
+      
       setNodes([...nodes, newNode]);
     }
   }, [selectedNodeIds, nodes, edges, setNodes]);
@@ -315,8 +340,7 @@ Write in plain text only. No formatting, no symbols, no bullet points. Use natur
       <FloatingToolbar 
         onAddNode={() => setIsNodePanelOpen(true)}
         onSearch={() => setIsSearchOpen(true)}
-        snapToGrid={snapToGrid}
-        onToggleSnap={() => setSnapToGrid(!snapToGrid)}
+        onToggleGrid={() => setSnapToGrid(!snapToGrid)}
         canUndo={canUndo}
         canRedo={canRedo}
         onUndo={undo}
@@ -326,6 +350,8 @@ Write in plain text only. No formatting, no symbols, no bullet points. Use natur
         onDelete={deleteSelectedNodes}
         canDelete={selectedNodeIds.length > 0}
         onAi={analyzeSelectedNodes}
+        onFeedback={() => setShowFeedbackModal(true)}
+        onForms={() => {}}
       />
 
       <AnimatePresence>
@@ -341,6 +367,60 @@ Write in plain text only. No formatting, no symbols, no bullet points. Use natur
       </AnimatePresence>
 
       <KeyboardShortcuts />
+
+      <FeedbackModal 
+        isOpen={showFeedbackModal} 
+        onClose={() => setShowFeedbackModal(false)}
+        onSubmit={handleFeedbackSubmit}
+      />
+
+      {/* Auto Feedback Prompt */}
+      {showAutoFeedback && (
+        <div className="fixed top-4 right-4 z-50 max-w-sm">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-600 p-4">
+            <div className="flex items-start gap-3">
+              <div className="text-2xl">💬</div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                  How's MindMesh working for you?
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                  We'd love to hear your feedback!
+                </p>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => {
+                      setShowAutoFeedback(false);
+                      setShowFeedbackModal(true);
+                    }}
+                    className="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    Give Feedback
+                  </button>
+                  <button
+                    onClick={() => {
+                      setShowAutoFeedback(false);
+                      localStorage.setItem('mindmesh_feedback_given', 'true');
+                    }}
+                    className="px-3 py-1.5 text-gray-500 text-sm hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                  >
+                    Maybe Later
+                  </button>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setShowAutoFeedback(false);
+                  localStorage.setItem('mindmesh_feedback_given', 'true');
+                }}
+                className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

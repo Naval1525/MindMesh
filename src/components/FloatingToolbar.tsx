@@ -1,16 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Plus, 
-  Search, 
-  Grid3X3, 
-  Upload, 
-  Undo2, 
-  Redo2,
-  FileDown,
-  Layers,
-  Trash,
-  Sparkles,
+import {
+  Plus, Search, Grid3X3, Upload, Undo2, Redo2, FileDown, Layers, Trash, Sparkles, MessageSquare, FileText,
 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useData } from '../contexts/DataContext';
@@ -18,24 +9,24 @@ import { useData } from '../contexts/DataContext';
 interface FloatingToolbarProps {
   onAddNode: () => void;
   onSearch: () => void;
-  snapToGrid: boolean;
-  onToggleSnap: () => void;
-  canUndo: boolean;
-  canRedo: boolean;
+  onToggleGrid: () => void;
   onUndo: () => void;
   onRedo: () => void;
+  canUndo: boolean;
+  canRedo: boolean;
   onGroup: () => void;
   canGroup: boolean;
   onDelete: () => void;
   canDelete: boolean;
   onAi: () => void;
+  onFeedback: () => void;
+  onForms: () => void;
 }
 
 const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
   onAddNode,
   onSearch,
-  snapToGrid,
-  onToggleSnap,
+  onToggleGrid,
   canUndo,
   canRedo,
   onUndo,
@@ -45,6 +36,8 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
   onDelete,
   canDelete,
   onAi,
+  onFeedback,
+  onForms,
 }) => {
   const { theme, toggleTheme } = useTheme();
   const { exportData, importData } = useData();
@@ -81,11 +74,13 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
     { icon: Layers, onClick: onGroup, label: 'Group Selected (Cmd+G)', color: 'purple', disabled: !canGroup },
     { icon: Trash, onClick: onDelete, label: 'Delete Selected (Del)', color: 'red', disabled: !canDelete },
     { icon: Sparkles, onClick: onAi, label: 'AI Analyze (Cmd+I)', color: 'yellow', disabled: !canDelete },
-    { icon: Grid3X3, onClick: onToggleSnap, label: 'Toggle Snap to Grid', color: snapToGrid ? 'purple' : 'gray' },
+    { icon: Grid3X3, onClick: onToggleGrid, label: 'Toggle Grid', color: 'gray' },
     { icon: Undo2, onClick: onUndo, label: 'Undo (Cmd+Z)', color: 'orange', disabled: !canUndo },
     { icon: Redo2, onClick: onRedo, label: 'Redo (Cmd+Shift+Z)', color: 'orange', disabled: !canRedo },
     { icon: FileDown, onClick: exportData, label: 'Export Data (Cmd+E)', color: 'indigo' },
     { icon: Upload, onClick: handleImport, label: 'Import Data', color: 'indigo' },
+    { icon: MessageSquare, onClick: onFeedback, label: 'Give Feedback', color: 'pink' },
+    { icon: FileText, onClick: onForms, label: 'Forms', color: 'teal' },
   ];
 
   return (
