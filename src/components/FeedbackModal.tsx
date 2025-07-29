@@ -14,9 +14,6 @@ const FeedbackModal: React.FC<FeedbackModalProps> = ({ isOpen, onClose, onSubmit
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Debug log
-  console.log('FeedbackModal render - isOpen:', isOpen);
-
   const reactions = [
     { emoji: '😞', label: 'Didn\'t like it', value: 'didnt_like' },
     { emoji: '😊', label: 'Good', value: 'good' },
