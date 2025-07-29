@@ -10,8 +10,11 @@ const KeyboardShortcuts: React.FC = () => {
     { key: 'Cmd + Shift + F', description: 'Open search' },
     { key: 'Cmd + Z', description: 'Undo' },
     { key: 'Cmd + Shift + Z', description: 'Redo' },
+    { key: 'Cmd + G', description: 'Group selected nodes' },
     { key: 'Cmd + E', description: 'Export data' },
     { key: 'Cmd + /', description: 'Show shortcuts' },
+    { key: 'Del / ⌫', description: 'Delete selected nodes' },
+    { key: 'Cmd + I', description: 'AI analyze selected' },
     { key: 'Space + Drag', description: 'Pan canvas' },
     { key: 'Mouse Wheel', description: 'Zoom in/out' },
   ];

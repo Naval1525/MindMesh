@@ -1,0 +1,931 @@
+{
+  "nodes": [
+    {
+      "id": "monday",
+      "type": "cluster",
+      "position": { "x": 50, "y": 50 },
+      "data": { 
+        "title": "Monday", 
+        "members": ["mon-830", "mon-930", "mon-1030", "mon-1130", "mon-1230", "mon-1330", "mon-1430", "mon-1530", "mon-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "tuesday",
+      "type": "cluster",
+      "position": { "x": 400, "y": 50 },
+      "data": { 
+        "title": "Tuesday", 
+        "members": ["tue-830", "tue-930", "tue-1030", "tue-1130", "tue-1230", "tue-1330", "tue-1430", "tue-1530", "tue-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "wednesday",
+      "type": "cluster",
+      "position": { "x": 750, "y": 50 },
+      "data": { 
+        "title": "Wednesday", 
+        "members": ["wed-830", "wed-930", "wed-1030", "wed-1130", "wed-1230", "wed-1330", "wed-1430", "wed-1530", "wed-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "thursday",
+      "type": "cluster",
+      "position": { "x": 1100, "y": 50 },
+      "data": { 
+        "title": "Thursday", 
+        "members": ["thu-830", "thu-930", "thu-1030", "thu-1130", "thu-1230", "thu-1330", "thu-1430", "thu-1530", "thu-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "friday",
+      "type": "cluster",
+      "position": { "x": 1450, "y": 50 },
+      "data": { 
+        "title": "Friday", 
+        "members": ["fri-830", "fri-930", "fri-1030", "fri-1130", "fri-1230", "fri-1330", "fri-1430", "fri-1530", "fri-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "saturday",
+      "type": "cluster",
+      "position": { "x": 1800, "y": 50 },
+      "data": { 
+        "title": "Saturday", 
+        "members": ["sat-830", "sat-930", "sat-1030", "sat-1130", "sat-1230", "sat-1330", "sat-1430", "sat-1530", "sat-1630"], 
+        "collapsed": false 
+      }
+    },
+    {
+      "id": "mon-830",
+      "type": "schedule",
+      "position": { "x": 50, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET301: B33, B43 (P): Pulkit Dwivedi {P-LA-006}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "mon-930",
+      "type": "schedule",
+      "position": { "x": 50, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "CSET-Placement: S17, S18 (L): Abhilasha Singh {P-CB-005}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "mon-1030",
+      "type": "schedule",
+      "position": { "x": 50, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "CSET302: S17, S18, S19, S20 (L): Rajnish Kumar Chaturvedi {104-N-LH}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "mon-1130",
+      "type": "schedule",
+      "position": { "x": 50, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "mon-1230",
+      "type": "schedule",
+      "position": { "x": 50, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "mon-1330",
+      "type": "schedule",
+      "position": { "x": 50, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET358: ALL-L (L): Dhananjay Kumar {P-CC-015}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "mon-1430",
+      "type": "schedule",
+      "position": { "x": 50, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET382: S17, S18, S19, S20 (L): Sheikh Moeen UL Haque {P-LH-101}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "mon-1530",
+      "type": "schedule",
+      "position": { "x": 50, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET324: B33 (P): Anjali Goyal {215-N-LA}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "mon-1630",
+      "type": "schedule",
+      "position": { "x": 50, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET324: B33 (P): Anjali Goyal {215-N-LA}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "tue-830",
+      "type": "schedule",
+      "position": { "x": 400, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET454: ALL-P (P): Himanshu Mudgal_Xebia {P-LA-207}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "tue-930",
+      "type": "schedule",
+      "position": { "x": 400, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "CSET344: B31, B33, B34 (P): Gaurav Kumar Dashondhi {B-LA-214}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "tue-1030",
+      "type": "schedule",
+      "position": { "x": 400, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "CSET344: B31, B33, B34 (P): Gaurav Kumar Dashondhi {B-LA-214}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "tue-1130",
+      "type": "schedule",
+      "position": { "x": 400, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "tue-1230",
+      "type": "schedule",
+      "position": { "x": 400, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "tue-1330",
+      "type": "schedule",
+      "position": { "x": 400, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET363: ALL-L (L): Ajay Kumar {P-LH-103}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "tue-1430",
+      "type": "schedule",
+      "position": { "x": 400, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET301: S13, S14, S15, S16, S17, S18 (L): Umesh Gupta {101-N-LH}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "tue-1530",
+      "type": "schedule",
+      "position": { "x": 400, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET301: S13, S14, S15, S16, S17, S18 (L): Umesh Gupta {101-N-LH}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "tue-1630",
+      "type": "schedule",
+      "position": { "x": 400, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET302: S17, S18, S19, S20 (L): Rajnish Kumar Chaturvedi {104-N-LH}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "wed-830",
+      "type": "schedule",
+      "position": { "x": 750, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET337: ALL-P (P): Piyush Singh {P-LA-011}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "wed-930",
+      "type": "schedule",
+      "position": { "x": 750, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "CSET305: B33 (P): Aditya Dev Mishra {B-LA-213}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "wed-1030",
+      "type": "schedule",
+      "position": { "x": 750, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "CSET305: B33 (P): Aditya Dev Mishra {B-LA-213}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "wed-1130",
+      "type": "schedule",
+      "position": { "x": 750, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "wed-1230",
+      "type": "schedule",
+      "position": { "x": 750, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "wed-1330",
+      "type": "schedule",
+      "position": { "x": 750, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET457: ALL-L (L): Ravikant Tyagi_Xebia {P-LH-104}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "wed-1430",
+      "type": "schedule",
+      "position": { "x": 750, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET382: S17, S18, S19, S20 (L): Sheikh Moeen UL Haque {P-LH-101}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "wed-1530",
+      "type": "schedule",
+      "position": { "x": 750, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET225: S17, S18, S19, S20, S21, S22, S23, S24 (L): Ashwani Kumar {P-LH-103}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "wed-1630",
+      "type": "schedule",
+      "position": { "x": 750, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET225: B31, B33, B34 (P): Amit Chauhan {B-LA-101}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "thu-830",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET474: ALL-P (P): Rishi Dutt Sharma {B-LA-104}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "thu-930",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "CSET301: B33, B43 (P): Pulkit Dwivedi {P-LA-006}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "thu-1030",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "CSET301: B33, B43 (P): Pulkit Dwivedi {P-LA-006}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "thu-1130",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "thu-1230",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "thu-1330",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET337: ALL-L (L): Piyush Singh {P-LA-012}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "thu-1430",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET305: S17, S18, S19, S20 (L): Aditya Dev Mishra {P-LH-103}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "thu-1530",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET225: S17, S18, S19, S20, S21, S22, S23, S24 (L): Ashwani Kumar {P-LH-103}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "thu-1630",
+      "type": "schedule",
+      "position": { "x": 1100, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET225: B31, B33, B34 (P): Amit Chauhan {B-LA-101}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "fri-830",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET480: ALL-P (P): Paawan Kumar {B-LA-105}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "fri-930",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "fri-1030",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "fri-1130",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "fri-1230",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "fri-1330",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET454: ALL-L (L): Himanshu Mudgal_Xebia {P-LA-006}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "fri-1430",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET305: S17, S18, S19, S20 (L): Aditya Dev Mishra {P-LH-103}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "fri-1530",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET324: S17, S18, S19, S20 (L): Surabhi Solanki {102-N-LH}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "fri-1630",
+      "type": "schedule",
+      "position": { "x": 1450, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET363: B29, B30, B31, B32, B33, B34, B35, B36, B37, B38, B39, B40 (P): Gaurav Sharma {P-LA-206}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "sat-830",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 120 },
+      "data": { 
+        "title": "8:30-9:30", 
+        "content": "CSET369: B31, B32, B33 (P): Uphar Singh {P-LA-313}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "sat-930",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 180 },
+      "data": { 
+        "title": "9:30-10:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "sat-1030",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 240 },
+      "data": { 
+        "title": "10:30-11:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "sat-1130",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 300 },
+      "data": { 
+        "title": "11:30-12:30", 
+        "content": "Free Period",
+        "color": "gray"
+      }
+    },
+    {
+      "id": "sat-1230",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 360 },
+      "data": { 
+        "title": "12:30-1:30", 
+        "content": "Lunch Break",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "sat-1330",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 420 },
+      "data": { 
+        "title": "13:30-14:30", 
+        "content": "CSET358-Blockchain/CSET358-Cloud Computing: ALL-L (L): Dakshita Sharma {P-CC-010}",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "sat-1430",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 480 },
+      "data": { 
+        "title": "14:30-15:30", 
+        "content": "CSET358-Cloud Computing: ALL-L (L): Dakshita Sharma {P-CC-010}",
+        "color": "green"
+      }
+    },
+    {
+      "id": "sat-1530",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 540 },
+      "data": { 
+        "title": "15:30-16:30", 
+        "content": "CSET474: ALL-L (L): Rishi Dutt Sharma {B-LA-104}",
+        "color": "purple"
+      }
+    },
+    {
+      "id": "sat-1630",
+      "type": "schedule",
+      "position": { "x": 1800, "y": 600 },
+      "data": { 
+        "title": "16:30-17:30", 
+        "content": "CSET480: ALL-L (L): Paawan Kumar {B-LA-105}",
+        "color": "purple"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "monday-to-mon-830",
+      "source": "monday",
+      "target": "mon-830",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-930",
+      "source": "monday",
+      "target": "mon-930",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1030",
+      "source": "monday",
+      "target": "mon-1030",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1130",
+      "source": "monday",
+      "target": "mon-1130",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1230",
+      "source": "monday",
+      "target": "mon-1230",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1330",
+      "source": "monday",
+      "target": "mon-1330",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1430",
+      "source": "monday",
+      "target": "mon-1430",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1530",
+      "source": "monday",
+      "target": "mon-1530",
+      "animated": true
+    },
+    {
+      "id": "monday-to-mon-1630",
+      "source": "monday",
+      "target": "mon-1630",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-830",
+      "source": "tuesday",
+      "target": "tue-830",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-930",
+      "source": "tuesday",
+      "target": "tue-930",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1030",
+      "source": "tuesday",
+      "target": "tue-1030",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1130",
+      "source": "tuesday",
+      "target": "tue-1130",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1230",
+      "source": "tuesday",
+      "target": "tue-1230",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1330",
+      "source": "tuesday",
+      "target": "tue-1330",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1430",
+      "source": "tuesday",
+      "target": "tue-1430",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1530",
+      "source": "tuesday",
+      "target": "tue-1530",
+      "animated": true
+    },
+    {
+      "id": "tuesday-to-tue-1630",
+      "source": "tuesday",
+      "target": "tue-1630",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-830",
+      "source": "wednesday",
+      "target": "wed-830",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-930",
+      "source": "wednesday",
+      "target": "wed-930",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1030",
+      "source": "wednesday",
+      "target": "wed-1030",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1130",
+      "source": "wednesday",
+      "target": "wed-1130",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1230",
+      "source": "wednesday",
+      "target": "wed-1230",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1330",
+      "source": "wednesday",
+      "target": "wed-1330",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1430",
+      "source": "wednesday",
+      "target": "wed-1430",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1530",
+      "source": "wednesday",
+      "target": "wed-1530",
+      "animated": true
+    },
+    {
+      "id": "wednesday-to-wed-1630",
+      "source": "wednesday",
+      "target": "wed-1630",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-830",
+      "source": "thursday",
+      "target": "thu-830",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-930",
+      "source": "thursday",
+      "target": "thu-930",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1030",
+      "source": "thursday",
+      "target": "thu-1030",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1130",
+      "source": "thursday",
+      "target": "thu-1130",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1230",
+      "source": "thursday",
+      "target": "thu-1230",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1330",
+      "source": "thursday",
+      "target": "thu-1330",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1430",
+      "source": "thursday",
+      "target": "thu-1430",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1530",
+      "source": "thursday",
+      "target": "thu-1530",
+      "animated": true
+    },
+    {
+      "id": "thursday-to-thu-1630",
+      "source": "thursday",
+      "target": "thu-1630",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-830",
+      "source": "friday",
+      "target": "fri-830",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-930",
+      "source": "friday",
+      "target": "fri-930",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1030",
+      "source": "friday",
+      "target": "fri-1030",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1130",
+      "source": "friday",
+      "target": "fri-1130",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1230",
+      "source": "friday",
+      "target": "fri-1230",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1330",
+      "source": "friday",
+      "target": "fri-1330",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1430",
+      "source": "friday",
+      "target": "fri-1430",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1530",
+      "source": "friday",
+      "target": "fri-1530",
+      "animated": true
+    },
+    {
+      "id": "friday-to-fri-1630",
+      "source": "friday",
+      "target": "fri-1630",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-830",
+      "source": "saturday",
+      "target": "sat-830",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-930",
+      "source": "saturday",
+      "target": "sat-930",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1030",
+      "source": "saturday",
+      "target": "sat-1030",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1130",
+      "source": "saturday",
+      "target": "sat-1130",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1230",
+      "source": "saturday",
+      "target": "sat-1230",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1330",
+      "source": "saturday",
+      "target": "sat-1330",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1430",
+      "source": "saturday",
+      "target": "sat-1430",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1530",
+      "source": "saturday",
+      "target": "sat-1530",
+      "animated": true
+    },
+    {
+      "id": "saturday-to-sat-1630",
+      "source": "saturday",
+      "target": "sat-1630",
+      "animated": true
+    }
+  ],
+  "exportedAt": "2024-07-27T14:30:00.000Z"
+} 

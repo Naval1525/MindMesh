@@ -4,12 +4,13 @@ import {
   Plus, 
   Search, 
   Grid3X3, 
-  Download, 
   Upload, 
   Undo2, 
   Redo2,
-  Palette,
-  FileDown
+  FileDown,
+  Layers,
+  Trash,
+  Sparkles,
 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useData } from '../contexts/DataContext';
@@ -23,6 +24,11 @@ interface FloatingToolbarProps {
   canRedo: boolean;
   onUndo: () => void;
   onRedo: () => void;
+  onGroup: () => void;
+  canGroup: boolean;
+  onDelete: () => void;
+  canDelete: boolean;
+  onAi: () => void;
 }
 
 const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
@@ -33,10 +39,15 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
   canUndo,
   canRedo,
   onUndo,
-  onRedo
+  onRedo,
+  onGroup,
+  canGroup,
+  onDelete,
+  canDelete,
+  onAi,
 }) => {
   const { theme, toggleTheme } = useTheme();
-  const { exportData } = useData();
+  const { exportData, importData } = useData();
 
   const handleImport = () => {
     const input = document.createElement('input');
@@ -48,8 +59,7 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
         const reader = new FileReader();
         reader.onload = (e) => {
           const content = e.target?.result as string;
-          // This would be handled by DataContext
-          console.log('Import data:', content);
+          importData(content);
         };
         reader.readAsText(file);
       }
@@ -68,6 +78,9 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({
   const toolbarItems = [
     { icon: Plus, onClick: onAddNode, label: 'Add Node (Cmd+N)', color: 'blue' },
     { icon: Search, onClick: onSearch, label: 'Search (Cmd+Shift+F)', color: 'green' },
+    { icon: Layers, onClick: onGroup, label: 'Group Selected (Cmd+G)', color: 'purple', disabled: !canGroup },
+    { icon: Trash, onClick: onDelete, label: 'Delete Selected (Del)', color: 'red', disabled: !canDelete },
+    { icon: Sparkles, onClick: onAi, label: 'AI Analyze (Cmd+I)', color: 'yellow', disabled: !canDelete },
     { icon: Grid3X3, onClick: onToggleSnap, label: 'Toggle Snap to Grid', color: snapToGrid ? 'purple' : 'gray' },
     { icon: Undo2, onClick: onUndo, label: 'Undo (Cmd+Z)', color: 'orange', disabled: !canUndo },
     { icon: Redo2, onClick: onRedo, label: 'Redo (Cmd+Shift+Z)', color: 'orange', disabled: !canRedo },
