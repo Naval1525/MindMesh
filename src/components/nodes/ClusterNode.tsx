@@ -26,6 +26,7 @@ const ClusterNode: React.FC<NodeProps<ClusterData>> = ({ id, data, selected }) =
 
   return (
     <div
+      
       className={`min-w-[220px] border-2 rounded-lg p-3 shadow-xl glass bg-white dark:bg-gray-800 border-blue-300 dark:border-blue-600 select-none cursor-move ${
         selected ? 'ring-2 ring-blue-400' : ''
       }`}
