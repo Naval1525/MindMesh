@@ -20,6 +20,7 @@ const FeedbackModal: React.FC<FeedbackModalProps> = ({ isOpen, onClose, onSubmit
     { emoji: '😍', label: 'Best', value: 'best' },
     { emoji: '❤️', label: 'Loved it!', value: 'loved_it' },
   ];
+  
 
   const handleSubmit = async () => {
     if (!selectedReaction) return;
